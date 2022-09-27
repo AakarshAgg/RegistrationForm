@@ -1,0 +1,104 @@
+<<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTML Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="app.css">
+    </head>
+
+    <body>
+        <Form action="">
+            <div class="container">
+                <fieldset>
+                    <legend>
+                        <h1>Registration Form</h1>
+                    </legend>
+                    <p>please fill all the enteries in this form to register with us</p>
+                    <hr>
+                    <label for="fn"><b>First Name:</b></label>
+                    <input type="text" placeholder="First Name" name="fn" id="fn" required />
+                    <label for="ln"><b>Last Name:</b></label>
+
+                    <input type="text" placeholder="Last Name" name="ln" id="ln" required />
+
+                    <br><label for="em"><b>Email:</b> <input type="email" placeholder="Enter Your Email" name="em"
+                            id="em" required /></label>
+
+                    <br><label for="psw"><b>Password:</b><input type="Password"
+                            title="please enter password of length 5 to 10" placeholder="Enter Password" name="psw"
+                            id="psw" pattern=".{5,10}" required /></label>
+
+                    <br><label for="cpsw"><b>Confirm Password:</b></label>
+                    <input type="Password" placeholder="Enter Confirm Password"
+                        title="please enter confirm password of length 5 to 10" name="cpsw" id="cpsw" pattern=".{5,10}"
+                        required />
+                    <br><label for=""><b>Mobile No.</b></label>
+                    <input type="text" name="countrycode" placeholder="Enter Mobile Number"
+                        title="please enter 10 digit mobile number" value="+91"  pattern="[+]{1}[1-9]{2}[0-9]{10}"  required />
+
+
+                    <p>Choose Gender</b></p>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Male</label>
+                    <br><input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                    <br><input type="radio" name="gender" value="other" id="other">
+                    <label for="other">Other</label>
+
+                    <br> <br><label for="myfile"><b>Upload Document(optional):</b><input type="file" id="myfile"
+                            name="myfile"></label>
+
+
+                    <p><b>Choose Cars:</b>
+                        <input list="cars" type="text">
+                        <datalist id="cars">
+                            <option value="Audi">Audi</option>
+                            <option value="Lambo">Lambo</option>
+                            <option value="Macleria">Macleria</option>
+                            <option value="BMW">BMW</option>
+                        </datalist>
+                    </p>
+                    <label for="">Birthday:</label>
+                    <select id="birthday" name="month">
+                        <option>Month</option>
+                        <option>january</option>
+                        <option>february</option>
+                        <option>march</option>
+                        <option>april</option>
+                    </select>
+                    <select id="birthday" name="day">
+                        <option>Day</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <select id="birthday" name="year">
+                        <option>year</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                    </select>
+                    <br><br>
+                    <p><b>Your Experience:</b></p>
+                    <textarea rows="5" placeholder="Write your experience here"></textarea>
+
+
+                    <br><label><input type="checkbox" name="check" required />I agree to the terms and conditions </label>
+
+                    <br><br><button type="submit" class="registerbtn">Register</button>
+                </fieldset>
+            </div>
+        </form>
+
+        <script src="" async defer></script>
+    </body>
+
+    </html>
